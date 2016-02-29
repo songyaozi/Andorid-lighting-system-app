@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_usage_history"
+            android:orderInCategory="1"
+            app:showAsAction="never"
+            android:title="@string/title_activity_usage_history"/>
+        <item
+            android:id="@+id/menu_saved_setting"
+            android:orderInCategory="2"
+            app:showAsAction="never"
+            android:title="@string/title_activity_saved_setting"/>
+        <item
+            android:id="@+id/menu_bill"
+            android:orderInCategory="3"
+            app:showAsAction="never"
+            android:title="@string/title_activity_other_settings"/>
+
+        <item
+            android:id="@+id/menu_alarm"
+            android:orderInCategory="5"
+            app:showAsAction="never"
+            android:title="@string/title_activity_alarm"/>
+        <item
+            android:id="@+id/menu_weather"
+            android:orderInCategory="4"
+            app:showAsAction="never"
+            android:title="@string/title_activity_weather"/>
+    </group>
+</menu>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    //tools:showIn="@layout/activity_current_setting" tools:context=".MainActivity">
+
+    <TextView android:text="Welcome!"
+        android:textSize="25dp"
+        android:textColor="@color/colorAzure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_welcome" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_LED1"
+        android:layout_marginTop="118dp"
+        android:layout_below="@+id/textView_welcome"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:indeterminate="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="LED1"
+        android:textColor="#11aa66"
+        android:id="@+id/seekbar_message1"
+        android:layout_below="@+id/seekBar_LED1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_LED2"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/seekbar_message1"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="LED2"
+        android:id="@+id/seekbar_message2"
+        android:textColor="#11aa66"
+        android:layout_below="@+id/seekBar_LED2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:background="@drawable/button"
+        android:id="@+id/button_logout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/seekbar_message2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView_loggedin_name"
+        android:layout_below="@+id/textView_welcome"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Username"
+        android:textColor="@color/colorAzure"
+        android:id="@+id/textView_loggedin_username"
+        android:layout_below="@+id/textView_loggedin_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/button_update"
+        android:textAllCaps="false"
+        android:background="@drawable/button"
+        android:layout_below="@+id/button_logout"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Save setting"
+        android:id="@+id/button_save"
+        android:textAllCaps="false"
+        android:background="@drawable/button"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button_update"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>
